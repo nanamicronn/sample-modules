@@ -17,7 +17,7 @@ export default [
         tsconfig: './tsconfig.json',
       }),
     ],
-    // external: ['react', 'react-dom', '@emotion/styled', '@emotion/react'],
+    // external: ['react', '@chakra-ui/react', '@emotion/styled', '@emotion/react'],
   },
   {
     input: "dist/types/index.d.ts",
