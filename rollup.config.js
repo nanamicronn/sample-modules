@@ -1,5 +1,7 @@
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
 
 export default [
   {
@@ -10,6 +12,8 @@ export default [
       sourcemap: true,
     },
     plugins: [
+      resolve(),
+      commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
     ],
   },
