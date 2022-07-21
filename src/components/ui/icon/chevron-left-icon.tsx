@@ -1,5 +1,5 @@
-import React from 'react'
 import { Icon, IconProps } from '@chakra-ui/react'
+import React from 'react'
 
 type ChevronLeftIconProps = {
   weight?: 300 | 400

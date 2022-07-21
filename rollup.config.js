@@ -13,14 +13,11 @@ export default [
       },
     ],
     plugins: [
-      commonjs({
-        include: ['node_modules/**'],
-      }),
       typescript({
         tsconfig: './tsconfig.json',
       }),
     ],
-    external: ['react', '@chakra-ui/react', '@emotion/styled', '@emotion/react'],
+    // external: ['react', '@chakra-ui/react', '@emotion/styled', '@emotion/react'],
   },
   {
     input: "dist/types/index.d.ts",
