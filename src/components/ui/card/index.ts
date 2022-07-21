@@ -1,3 +1,3 @@
 export { Card } from '@/components/ui/card/card';
-export { CheckCircleIcon } from '@/components/ui/card/check-circle-icon';
+export { Check } from '@/components/ui/card/check';
 export type { CardProps } from '@/components/ui/card/card'

@@ -6,7 +6,7 @@ export type CheckCircleIconProps = {
   py?: string
 }
 
-export const CheckCircleIcon = ({ children, py = '1rem', ...props }: CheckCircleIconProps & FlexProps) => {
+export const Check = ({ children, py = '1rem', ...props }: CheckCircleIconProps & FlexProps) => {
   return (
     <Flex
       flexDirection={'column'}
