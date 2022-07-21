@@ -26,8 +26,6 @@
 
 {
   "compilerOptions": {
-//    "declarationDir": "types",
-    "jsx": "react",
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -51,8 +49,9 @@
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
-    "declaration": true
+    "declaration": true,
+    "jsx": "react"
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["node_modules"]
 }
