@@ -1,4 +1,3 @@
-export { CheckCircleIcon } from '@/components/ui/icon/check-circle-icon'
 export { ChevronLeftIcon } from '@/components/ui/icon/chevron-left-icon'
 export { ChevronRightIcon } from '@/components/ui/icon/chevron-right-icon'
 export { CircleIcon } from '@/components/ui/icon/circle-icon'
