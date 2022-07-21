@@ -2,7 +2,7 @@
   "name": "sample-modules",
   "version": "1.0.3",
   "description": "",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:nanamicronn/sample-modules.git"
