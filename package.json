@@ -1,6 +1,6 @@
 {
   "name": "sample-modules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "module": "dist/index.js",
   "repository": {
@@ -8,6 +8,7 @@
     "url": "git+ssh://git@github.com:nanamicronn/sample-modules.git"
   },
   "scripts": {
+    "prebuild": "rimraf dist",
     "prepare": "rollup -c",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +29,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
