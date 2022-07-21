@@ -13,6 +13,9 @@ export default [
       },
     ],
     plugins: [
+      commonjs({
+        include: ['node_modules/**'],
+      }),
       typescript({
         tsconfig: './tsconfig.json',
       }),
