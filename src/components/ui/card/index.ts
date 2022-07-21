@@ -1,2 +1,2 @@
-export { Card } from '@/components/ui/card/card';
-export type { CardProps } from '@/components/ui/card/card'
+export { Card } from './card';
+export type { CardProps } from './card'
