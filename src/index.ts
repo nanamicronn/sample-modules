@@ -1,1 +1,2 @@
-export *  from './components'
+export *  from './components/ui/card'
+export *  from './components/ui/icon'

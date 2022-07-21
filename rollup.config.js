@@ -1,6 +1,7 @@
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
+import svg from 'rollup-plugin-svg';
 
 export default [
   {
@@ -13,11 +14,12 @@ export default [
       },
     ],
     plugins: [
+      svg(),
       typescript({
         tsconfig: './tsconfig.json',
       }),
     ],
-    // external: ['react', '@chakra-ui/react', '@emotion/styled', '@emotion/react'],
+    external: ['react', '@chakra-ui/react', '@emotion/styled', '@emotion/react'],
   },
   {
     input: "dist/types/index.d.ts",
