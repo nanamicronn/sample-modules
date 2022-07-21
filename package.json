@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:nanamicronn/sample-modules.git"
+  },
   "scripts": {
+    "prepare": "rollup -c",
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
