@@ -1,12 +1,12 @@
 import React from 'react'
 import { Flex, FlexProps } from '@chakra-ui/react'
 
-export type CheckCircleIconProps = {
+export type CheckProps = {
   children: React.ReactNode
   py?: string
 }
 
-export const Check = ({ children, py = '1rem', ...props }: CheckCircleIconProps & FlexProps) => {
+export const Check = ({ children, py = '1rem', ...props }: CheckProps & FlexProps) => {
   return (
     <Flex
       flexDirection={'column'}
