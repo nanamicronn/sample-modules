@@ -1,17 +1,23 @@
 import React from 'react'
-import { Icon, Flex, Text, FlexProps } from '@chakra-ui/react'
+import { Flex, FlexProps } from '@chakra-ui/react'
 
-export const CheckCircleIcon = ({ ...props }: FlexProps) => {
+export type CheckCircleIconProps = {
+  children: React.ReactNode
+  py?: string
+}
+
+export const CheckCircleIcon = ({ children, py = '1rem', ...props }: CheckCircleIconProps & FlexProps) => {
   return (
-    <Flex { ...props }>
-      <Text>aaaaa</Text>
-      {/*<svg xmlns="http://www.w3.org/2000/svg" height="48px" width="48px">*/}
-      {/*  <path d="M0 0h24v24H0V0z" fill="none" />*/}
-      {/*  <path*/}
-      {/*    fill="currentColor"*/}
-      {/*    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"*/}
-      {/*  />*/}
-      {/*</svg>*/}
+    <Flex
+      flexDirection={'column'}
+      bg={'neutral.0'}
+      borderRadius={'0.5rem'}
+      shadow={'normal'}
+      px={'1rem'}
+      py={py}
+      {...props}
+    >
+      {children}
     </Flex>
   )
 }
